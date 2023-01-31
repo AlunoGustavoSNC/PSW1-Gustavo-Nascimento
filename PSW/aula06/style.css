@@ -1,0 +1,79 @@
+body{
+    background-color: #aaa;
+    font-family: 'verdana', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    background-color: #fff;
+    max-width: 800px;
+    min-height: 300px;
+    padding: 10px;
+    border: 1px solid #202020;
+    border-radius: 10px;
+      
+    display: grid;
+    grid-template-areas:'nome nome cpf'
+                        'email email senha'
+                        'cidade estado cep'
+                        'entrar entrar entrar';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 50px;
+    gap: 10px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.2em;
+}
+
+label input, select{
+    font-size: 1em;
+    padding: 5px 5px;
+}
+
+#nome{
+    grid-area: nome;
+}
+
+#cpf{
+    grid-area: cpf;
+}
+
+#email{
+    grid-area: email;
+}
+
+#senha{
+    grid-area: senha;
+}
+
+#cidade{
+    grid-area: cidade;
+}
+
+#estado{
+    grid-area: estado;
+}
+
+#cep{
+    grid-area: cep;
+}
+
+#btn{
+    border-radius: 10px;
+    font-size: 1.2em;
+    width: 100px;
+    grid-area: entrar;
+}
+
+#btn:hover{
+    background-color: #ddd;
+}
