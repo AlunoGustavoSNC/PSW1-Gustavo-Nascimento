@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - PSW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="topo">
+            <h1>Gestão de Estágio</h1>
+            <div class="linha"></div>
+            <p>Administrador</p>
+        </div>
+        <div class="navegacao">
+            <ul>
+                <li>Solicitações</li>
+                <li>Periodos Letivos</li>
+                <li>Cursos</li>
+                <li>Disciplinas</li>
+                <li>Oferta ao Aluno</li>
+            </ul>
+        </div>
+        <p class="sair">SAIR</p>
+    </div>
+    <div class="formulario">
+        <h1>Cadastro de unidade concendente</h1>
+
+        <form action="mostrados.php" method="get">
+            <label id="razao-social">
+                Razão Social da empresa
+                <input type="text" name="razao-social">
+            </label>
+
+            <label id="cnpj-cpf"> 
+                CNPJ/CPF
+                <input type="text" name="cnpj-cpf">
+            </label>
+
+            <label id="nome-fantasia">
+                Nome da Fantasia
+                <input type="text" name="nome-fantasia">
+            </label>
+
+            <label id="email">
+                E-mail
+                <input type="email" name="email">
+            </label>
+
+            <label id="tell">
+                Telefone
+                <input type="text" name="tell">
+            </label>
+
+            <label id="endereco">
+                Endereço
+                <input type="text" name="endereco">
+            </label>
+
+            <label id="numero">
+                Nº
+                <input type="number" name="numero">
+            </label>
+
+            <label id="bairro">
+                Bairro
+                <input type="text" name="bairro">
+            </label>
+
+            <label id="cep">
+                CEP
+                <input type="text" name="cep">
+            </label>
+
+            <label id="cidade">
+                Cidade
+                <input type="text" name="cidade">
+            </label>
+
+            <label id="estado">
+                Estado
+                <input type="text" name="estado">
+            </label>
+
+            <label id="nome-representante">
+                Nome do representante legal da empresa
+                <input type="text" name="nome-representante">
+            </label>
+
+            <label id="cargo-representante">
+                Cargo de representante legal da empresa
+                <input type="text" name="cargo-representante">
+            </label>
+
+            <label id="data-inicio">
+                Data de início do convênio
+                <input type="date" name="data-inicio">
+            </label>
+            
+            <label id="data-termino">
+                Data de término do convênio
+                <input type="date" name="data-termino">
+            </label>
+
+            <label id="curso-estagio">
+                Cursos permitidos para estágio
+                <select name="curso-estagio">
+                    <option value="curso 1">curso 1</option>
+                    <option value="curso 2">curso 2</option>
+                    <option value="curso 3">curso 3</option>
+                    <option value="curso 4">curso 4</option>
+                </select>
+            </label>
+
+            <label id="carga-horaria">
+                Carga horária diária máxima disponibilizada para cada estudante
+                <input type="text" name="carga-horaria">
+            </label>
+
+            <input type="submit" value="Cadastrar" id="btn">
+        </form>   
+    </div>
+</body>
+</html>

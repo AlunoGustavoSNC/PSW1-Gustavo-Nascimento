@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+header{
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    height: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+
+    position: sticky;
+    top: 0;
+}
+
+.logo-content{
+    background: #fff;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 13rem;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: rgb(255, 119, 0);
+}
+
+/*MAIN*/
+
+main{
+    padding: 2rem 10rem;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+/*FORM*/
+
+form{
+    width: 50%;
+
+    display: grid;
+    grid-template-areas:'nome nome cpf'
+                        'email email senha'
+                        'cidade estado cep'
+                        'ocupacao instituicao instituicao'
+                        'entrar entrar entrar';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 50px;
+    gap: 10px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+input, select{
+    padding: 5px;
+    font-size: 1em;
+}
+
+#nome{
+    grid-area: nome;
+}
+
+#cpf{
+    grid-area: cpf;
+}
+
+#email{
+    grid-area: email;
+}
+
+#senha{
+    grid-area: senha;
+}
+
+#cidade{
+    grid-area: cidade;
+}
+
+#estado{
+    grid-area: estado;
+}
+
+#cep{
+    grid-area: cep;
+}
+
+#ocupacao{
+    grid-area: ocupacao;
+}
+
+#instituicao{
+    grid-area: instituicao;
+}
+
+#btn{
+    background: #007bff;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 0; 
+    width: 50%;
+    font-size: 1.1em;
+
+    grid-area: entrar;
+}
+
+#btn:hover{
+    background-color: #0059b9;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 10rem;
+    color: #fff;
+    background-color: #273138;
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

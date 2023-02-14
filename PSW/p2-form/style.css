@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'menu formulario';
+    grid-template-columns: 300px 4fr;
+    grid-template-rows: 100vh;
+}
+
+.menu{
+    grid-area: menu;
+    background: rgb(37, 38, 79);
+}
+
+.topo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: normal, sans-serif;
+}
+
+.linha{
+    background-color: white;
+    width: 90%;
+    height: 1px;
+}
+
+.topo h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+ul{
+    color: white;
+    list-style: none;
+    font-family: normal, sans-serif;
+    font-size: 18px;
+}
+
+ul li{
+    margin-bottom: 15px;
+}
+
+.sair{
+    color: white;
+    font-family: normal, sans-serif;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.formulario{
+    grid-area: formulario;
+    font-family: normal, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.formulario h1{
+    color: rgb(37, 38, 79);
+}
+
+form{
+    width: 800px;
+
+    display: grid;
+    grid-template-areas:
+    'razao-social razao-social cnpj-cpf cnpj-cpf'
+    'nome-fantasia nome-fantasia nome-fantasia nome-fantasia'
+    'email email tell tell'
+    'endereco endereco endereco numero'
+    'bairro bairro cep cep'
+    'cidade cidade estado estado'
+    'nome-representante nome-representante cargo-representante cargo-representante'
+    'data-inicio data-inicio data-termino data-termino'
+    'curso-estagio curso-estagio carga-horaria carga-horaria'
+    'btn btn btn btn';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    column-gap: 20px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    color: rgb(37, 38, 79);
+    font-size: 14px;
+}
+
+input, select{
+    border-color: rgb(37, 38, 79);
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 3px 5px;
+}
+
+#razao-social{
+    grid-area: razao-social;
+}
+
+#cnpj-cpf{
+    grid-area: cnpj-cpf;
+}
+
+#nome-fantasia{
+    grid-area: nome-fantasia;
+}
+
+#email{
+    grid-area: email;
+}
+
+#tell{
+    grid-area: tell;
+}
+
+#endereco{
+    grid-area: endereco;
+}
+
+#numero{
+    grid-area: numero;
+}
+
+#bairro{
+    grid-area: bairro;
+}
+
+#cep{
+    grid-area: cep;
+}
+
+#cidade{
+    grid-area: cidade;
+}
+
+#estado{
+    grid-area: estado;
+}
+
+#nome-representante{
+    grid-area: nome-representante;
+}
+
+#cargo-representante{
+    grid-area: cargo-representante;
+}
+
+#data-inicio{
+    grid-area: data-inicio;
+}
+
+#data-termino{
+    grid-area: data-termino;
+}
+
+#curso-estagio{
+    grid-area: curso-estagio;
+}
+
+#carga-horaria{
+    grid-area: carga-horaria;
+}
+
+#btn{
+    grid-area: btn;
+    width: 25%;
+    background-color: rgb(37, 38, 79);
+    color: white;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
